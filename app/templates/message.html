@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Redacted data:</h1>
+<div>Card number: {{ card }}</div><br>
+<div>CVV: {{ cvv }}</div><br>
+<div>Expiration date: {{ exp }}</div><br>
+<form method="post" action="/forward">
+   <label for="lname">Card number alias:</label><br>
+   <input placeholder="alias here" type="text" id="card" name="card"><br>
+   <label for="lname">CVV alias:</label><br>
+   <input placeholder="alias here" type="text" id="cvv" name="cvv"><br>
+   <label for="lname">Expiration date alias:</label><br>
+   <input placeholder="alias here" type="text" id="exp" name="exp"><br><br>
+   <button type="submit">Reveal data</button>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Please, enter the text to be redacted</h1>
+<form method="post" action="/add_message">
+  <label for="lname">Card number:</label><br>
+  <input type="text" id="card" name="card"><br>
+  <label for="lname">CVV:</label><br>
+  <input type="text" id="cvv" name="cvv"><br>
+  <label for="lname">Expiration date:</label><br>
+  <input type="text" id="exp" name="exp"><br><br>
+  <button type="submit">Redact data</button>
+</form>
+
+{% endblock %}
